@@ -12,7 +12,7 @@ COPY entry.sh /
 
 RUN true \
     && apt update \
-    && apt install -y openvpn microsocks bash openresolv curl mtr-tiny procps \
+    && apt install -y openvpn microsocks bash openresolv curl mtr-tiny procps iputils-ping \
     && apt clean \
     && chmod a+x /entry.sh \
     && true

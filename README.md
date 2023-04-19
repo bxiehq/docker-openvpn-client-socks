@@ -28,5 +28,5 @@ docker run -it --rm --device=/dev/net/tun --cap-add=NET_ADMIN \
 Then connect to SOCKS proxy through through `localhost:1081`. For example:
 
 ```bash
-curl --proxy socks5://localhost:1081 ipinfo.io
+curl --proxy socks5://localhost:1081 -4 ipinfo.io
 ```

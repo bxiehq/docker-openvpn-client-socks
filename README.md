@@ -6,12 +6,12 @@ routing).
 
 ## Usage
 
-First, run `./build` script to generate a Docker image which will be used in `./run`.
+First, run `./build.sh` script to generate a Docker image which will be used in `./run.sh`.
 
-Then, use `./run` script in this repository:
+Then, use `./run.sh` script in this repository:
 
 ```bash
-./run /path/to/openvpn-config-file
+./run.sh /path/to/openvpn-config-file
 ```
 
 `/path/to/openvpn-config-file` will be mapped to `/openvpn.conf` in the container.

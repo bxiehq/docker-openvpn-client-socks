@@ -19,5 +19,5 @@ RUN true \
 
 ENTRYPOINT [ \
     "/bin/bash", "-c", \
-    "cd /etc/openvpn && /usr/sbin/openvpn --config /openvpn.conf --script-security 2 --route-up /entry.sh" \
+    "cd /etc/openvpn && /usr/sbin/openvpn --config /openvpn.conf --data-ciphers AES-128-CBC:AES-256-GCM:AES-128-GCM:CHACHA20-POLY1305 --script-security 2 --route-up /entry.sh" \
     ]

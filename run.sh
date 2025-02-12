@@ -13,9 +13,9 @@ exec docker run \
     --tty \
     --interactive \
     --device=/dev/net/tun \
-    --name=openvpn-client \
+    --name=openvpn-client-socks \
     --cap-add=NET_ADMIN \
-    --publish 127.0.0.1:1081:1080 \
+    --publish 127.0.0.1:9081:1080 \
     --volume "$(realpath "$1"):/openvpn.conf:ro" \
     --sysctl net.ipv6.conf.all.disable_ipv6=0 \
     --dns 1.1.1.1 \
